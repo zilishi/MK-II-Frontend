@@ -37,3 +37,5 @@ yarn start
 
 # 编译
 yarn build
+
+- 注： 首先将[幾盤后台](https://github.com/Mileworks/MK-II-Backend)工程运行
