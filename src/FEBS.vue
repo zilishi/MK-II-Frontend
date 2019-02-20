@@ -1,6 +1,6 @@
 <template>
   <a-locale-provider :locale="chinese">
-    <div id="mk">
+    <div id="febs">
       <router-view/>
     </div>
   </a-locale-provider>

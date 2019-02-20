@@ -12,7 +12,7 @@ export default {
     isMobile: false,
     theme: db.get('THEME', 'light'),
     layout: db.get('LAYOUT', 'side'),
-    systemName: 'MK-II-GEN',
+    systemName: 'MK-GEN-II',
     copyright: `${new Date().getFullYear()} <a href="https://mrbird.cc" target="_blank">MileWorks</a>`,
     multipage: getBooleanValue(db.get('MULTIPAGE'), true),
     fixSiderbar: getBooleanValue(db.get('FIX_SIDERBAR'), true),

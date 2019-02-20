@@ -37,4 +37,4 @@ new Vue({
   router,
   store,
   render: h => h(Febs)
-}).$mount('#mk')
+}).$mount('#febs')
