@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Febs from './Febs'
+import MK from './MK'
 import router from './router'
 import Antd from 'ant-design-vue'
 import store from './store'
@@ -36,5 +36,5 @@ Vue.prototype.$upload = request.upload
 new Vue({
   router,
   store,
-  render: h => h(Febs)
-}).$mount('#febs')
+  render: h => h(MK)
+}).$mount('#mk')

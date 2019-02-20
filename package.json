@@ -1,7 +1,7 @@
 {
-  "name": "febs-front",
+  "name": "mk-front",
   "version": "1.0.0",
-  "description": "FEBS Front By Vue",
+  "description": "MK-II Front By Vue",
   "author": "mrbrid <https://mrbrid.cc>",
   "private": true,
   "scripts": {
