@@ -6,12 +6,14 @@ RUN echo "deb http://mirrors.aliyun.com/debian wheezy main contrib non-free" > /
     echo "deb-src http://mirrors.aliyun.com/debian wheezy-updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb-src http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free" >> /etc/apt/sources.list && \
-    apt-get update  && apt-get install -y yarn && apt-get install -y nginx
+    apt-get update && apt-get install -y nginx && \
+    npm install -g yarn
 
 WORKDIR /usr/src/app
 COPY package*.json ./
 
-RUN yarn install
+RUN yarn config set registry https://registry.npm.taobao.org && \
+    yarn install
 COPY . .
 
 RUN yarn build
